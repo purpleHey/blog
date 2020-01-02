@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Today - Persisting data across container runs"
-date:   2019-12-31 09:49:17 +0000
+date:   2020-01-02 Thursday 04:51:32
 categories: docker volume
 ---
 - [ ] Day before yesterday review
