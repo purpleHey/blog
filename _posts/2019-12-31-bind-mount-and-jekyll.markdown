@@ -5,7 +5,7 @@ date:   2019-12-31 09:49:17 +0000
 categories: docker volume
 ---
 - [ ] Day before yesterday review
-- [ ] Yesterday review
+- [x] Yesterday review
 {: style='list-style-type: none'}
 
 Notes from the [Docker Mastery][docker-mastery] course section on Container lifetime.
@@ -18,7 +18,7 @@ You can see what volumes are created with:
 
 `>docker volume ls`
 
-If the Dockerfile you used to create the container has a "VOLUME /var/lib/mysql" type entry, a "Mounts" entry will be created for the container that has the mapping of the "Destination" (/var/lib/mysql) directory to the actual data "Source" directory on the local file system.  In this case it's for mysql, and when the container runs it will use the volume name on the local file system mounted at the source directory.  Use `>docker container inspect <containerName>` to see the "Mounts" details.
+If the Dockerfile you used to create the container has a "VOLUME /var/lib/mysql" type entry, a "Mounts" entry will be created for the container that has the mapping of the "Destination" (/var/lib/mysql) directory to the actual data "Source" directory on the local file system.  In this case it's for mysql, and when the container runs it will use the volume name on the local file system mounted at the "Source" directory.  Use `>docker container inspect <containerName>` to see the "Mounts" details.
 
 So the container thinks it's writing to /var/lib/mysql, but in actual fact it's writing the "Source" directory.  
 
@@ -36,6 +36,8 @@ local               psql-data
 
 To name the volume, use -v mysql-db:/var/lib/mysql when you do the docker run.
 
-You can `>docker volume inspect mysql-db` to get info on when the volume was created, what driver was used and what the Mountpoint is.
+You can `>docker volume inspect mysql-db` to get info on when the volume was created, what driver was used and what the "Mountpoint" is.
+
+Lastly, note that on Mac's and PC's, you can't actually navigate to the Mountpoint directory because Docker is doing some sourcery with a linux VM on the machine to make this work.  On Linux you could actually navigate to that directory.
 
 [docker-mastery]: https://www.udemy.com/course/docker-mastery
