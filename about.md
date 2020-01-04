@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![center-aligned-image](/assets/aboutFam.png){: .align-center}
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm a family guy who digs bluegrass music, riding bikes and designing and making stuff.  Tune in and see what's on my mind, workbench and music stand.
+
+Thanks to [Michael Rose](https://mademistakes.com/about/) for the nice [Basically Basic](https://mmistakes.github.io/jekyll-theme-basically-basic/) Jekyll Theme.
 
 You can find the source code for Jekyll at GitHub:
 [jekyll][jekyll-organization] /
