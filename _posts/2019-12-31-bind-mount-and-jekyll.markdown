@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Today - Persisting data across container runs"
+title:  "Persisting data across container runs"
 date:   2020-01-02 Thursday 04:51:32
 categories: docker volume
 ---
