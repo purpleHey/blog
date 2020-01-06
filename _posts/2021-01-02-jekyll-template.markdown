@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Today - Docker Registry"
-date:   2020-01-02 Thursday 05:34:57
+date:   2021-01-02 Thursday 05:34:57
 categories: docker registry
 ---
 - [ ] Day before yesterday review

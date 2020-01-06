@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Today - Docker Compose - docker-compose.yml"
+title:  "Docker Compose - docker-compose.yml"
 date:   2020-01-04 Saturday 14:59:14
 categories: docker compose
 ---
 
 - [ ] Day before yesterday review
-- [ ] Yesterday review
+- [x] Yesterday review
 
 `>docker-compose [up/down]` a great way to orchestrate a set of related services (containers) for local development.
 
