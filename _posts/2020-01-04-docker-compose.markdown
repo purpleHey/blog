@@ -7,13 +7,11 @@ categories: docker compose
 
 - [ ] Day before yesterday review
 - [x] Yesterday review
+{: style='list-style-type: none'}
 
 `>docker-compose [up/down]` a great way to orchestrate a set of related services (containers) for local development.
 
-{: style='list-style-type: none'}
 ![center-aligned-image](/assets/docker-compose.png){: .align-center}
-
-Notes from the [Docker Mastery][docker-mastery] course section on Container lifetime.
 
 # Docker Compose
 
@@ -47,5 +45,7 @@ Entries in the file are either **key**: **value** pairs like image: imageName, o
 If you use label's for the volumes in a service, you need to include those labels in a **volumes** stanza so docker knows to create those volumes before it spins up the various services.
 
 To spin up the services is as simple as `>docker-compose up`.
+
+Notes from the [Docker Mastery][docker-mastery] course section on Container lifetime.
 
 [docker-mastery]: https://www.udemy.com/course/docker-mastery
